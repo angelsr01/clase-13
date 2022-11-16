@@ -19,9 +19,9 @@ my_html <-
 <title> Título de la página: ejemplo de clase </title>
 </head>
 <body>
-<h1> Title 1.</h1>
-<h2> Subtitle <u>subrayado-1</u>. </h2>
-<p> Este es un párrafo muy pequeño que se encuentra dentro de la etiqueta <b>p</b> de <i>html</i> </p>
+<h1> Angel Siachoque.</h1>
+<h2> Uniandes <u>Taller de R</u>. </h2>
+<p> Este es un parrafo muy pequeño que se encuentra dentro de la etiqueta <b>p</b> de <i>html</i> </p>
 <a href="https://es.wikipedia.org/wiki/Copa_Mundial_de_F%C3%BAtbol"> link a wikipedia </a>
 </body>
 </html>'
@@ -34,14 +34,14 @@ browseURL("my_page.html") ## leer con el navegador de su equipo
 vignette("rvest")
 
 ## 2.1 Aplicación en R:
-my_url = "https://es.wikipedia.org/wiki/Copa_Mundial_de_F%C3%BAtbol"
+my_url = "https://es.wikipedia.org/wiki/FIFA"
 browseURL(my_url) ## Ir a la página
 
 ## leer el html de la página
-
+my_html <- read_html(my_url)
 
 ## ver la clase del objeto
-
+class(my_html)
 
 ## ver el objeto
 
@@ -64,7 +64,7 @@ browseURL(my_url) ## Ir a la página
 ## numero de tablas extraidas
 
 
-## tabla 10
+## tabla 7
 
 
 
